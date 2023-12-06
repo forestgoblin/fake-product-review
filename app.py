@@ -32,15 +32,13 @@ def main():
     # Button to trigger processing
     if st.button("Submit"):
         # Call a function to process the user input (you can replace this with your own logic)
-        result = process_input(user_input)
-
+        result1 = svm_classifier_saved(user_input)
+        result2 = naive_bayes_saved(user_input)
         # Display the result
-        st.text("Output:")
-        st.write(result)
+        st.text("Output svm classifier:")
+        st.write(result1)
+        st.text("Output naive bayes:")
+        st.write(result2)
 
-def process_input(user_input):
-    # Replace this with your own processing logic
-    # For now, let's just return the input as it is
-    return svm_classifier_saved(user_input)
 if __name__ == "__main__":
     main()
