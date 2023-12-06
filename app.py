@@ -9,11 +9,8 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-import string
-import warnings
 import streamlit as st
 
-warnings.filterwarnings('ignore')
 
 import pickle
 
