@@ -14,14 +14,17 @@ import streamlit as st
 
 import pickle
 
-vectorizer_loaded = pickle.load('/vectorizer_saved.pkl', 'rb')
+vectorizer_loaded = pickle.load('/vectorizer_saved')
 
-svm_classifier_loaded = pickle.load('/svm_classifier_saved.pkl', 'rb')
+svm_classifier_loaded = pickle.load('/svm_classifier_saved')
 
-naive_bayes_loaded = pickle.load('/naive_bayes_saved.pkl', 'rb')
+naive_bayes_loaded = pickle.load('/naive_bayes_saved')
 
-random_forest_classifier_loaded = pickle.load('/content/random_forest_classifier_saved', 'rb')
+random_forest_classifier_loaded = pickle.load('/random_forest_classifier_saved')
 
 st.title("Fake Review Detector")
 user_review_input = st.text_area()
 st.write(user_review_input)
+answer1 = svm_classifier_saved(user_review_input)
+answer2 = /naive_bayes_saved(user_review_input)
+answer3 = random_forest_classifier_saved(user_review_input)
