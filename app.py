@@ -14,9 +14,9 @@ import streamlit as st
 
 import pickle
 
-svm_classifier_loaded = pickle.load(open('/svm_classifier_saved', 'rb'))
+svm_classifier_loaded = pickle.load(open('/fake-product-review/svm_classifier_saved', 'rb'))
 
-naive_bayes_loaded = pickle.load(open('/naive_bayes_saved', 'rb'))
+naive_bayes_loaded = pickle.load(open('/fake-product-review/naive_bayes_saved', 'rb'))
 
 
 def main():
