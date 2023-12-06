@@ -14,11 +14,11 @@ import streamlit as st
 
 import pickle
 
-file_patch1 = 'svm_classifier_saved.pkl'
+file_patch1 = 'svm_classifier_saved'
 with open(file_path1, 'rb') as file1:
    svm_classifier_loaded = pickle.load(file1) 
 
-file_path2 = 'naive_bayes_saved.pkl'
+file_path2 = 'naive_bayes_saved'
 with open(file_path2, 'rb') as file2:
 naive_bayes_loaded = pickle.load(file2)
 
