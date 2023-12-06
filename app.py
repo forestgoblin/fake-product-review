@@ -9,27 +9,7 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.linear_model import LogisticRegression
 import string
-import nltk
-from nltk import word_tokenize
-from nltk.stem import PorterStemmer
-from nltk.stem import WordNetLemmatizer
-nltk.download('wordnet')
-from nltk.corpus import stopwords
-nltk.download('vader_lexicon')
-nltk.download('stopwords')
-nltk.download('omw-1.4')
-nltk.download('punkt')
 import warnings
 import streamlit as st
 
