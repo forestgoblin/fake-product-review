@@ -45,6 +45,6 @@ naive_bayes_loaded = pickle.load('/content/naive_bayes_saved', 'rb')
 
 random_forest_classifier_loaded = pickle.load('/content/random_forest_classifier_saved', 'rb')
 
-st.title("Fake Review Detector")xxxxxxxxxxxxxxxxxxxx
+st.title("Fake Review Detector")
 user_review_input = st.text_area()
 st.write(user_review_input)
