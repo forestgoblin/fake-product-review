@@ -14,8 +14,6 @@ import streamlit as st
 
 import pickle
 
-vectorizer_loaded = pickle.load('/vectorizer_saved')
-
 svm_classifier_loaded = pickle.load('/svm_classifier_saved')
 
 naive_bayes_loaded = pickle.load('/naive_bayes_saved')
