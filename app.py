@@ -14,11 +14,11 @@ import streamlit as st
 
 import pickle
 
-vectorizer_loaded = pickle.load('/vectorizer_saved', 'rb')
+vectorizer_loaded = pickle.load('/vectorizer_saved.pkl', 'rb')
 
-svm_classifier_loaded = pickle.load('/svm_classifier_saved', 'rb')
+svm_classifier_loaded = pickle.load('/svm_classifier_saved.pkl', 'rb')
 
-naive_bayes_loaded = pickle.load('/naive_bayes_saved', 'rb')
+naive_bayes_loaded = pickle.load('/naive_bayes_saved.pkl', 'rb')
 
 random_forest_classifier_loaded = pickle.load('/content/random_forest_classifier_saved', 'rb')
 
