@@ -20,7 +20,7 @@ with open(file_path1, 'rb') as file1:
 
 file_path2 = 'naive_bayes_saved'
 with open(file_path2, 'rb') as file2:
-naive_bayes_loaded = pickle.load(file2)
+    naive_bayes_loaded = pickle.load(file2)
 
 
 def main():
