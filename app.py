@@ -14,25 +14,23 @@ import streamlit as st
 
 import pickle
 
-svm_classifier_loaded = pickle.load(svm_classifier_saved)
+svm_classifier_loaded = pickle.load(open('/svm_classifier_saved', 'rb'))
 
-naive_bayes_loaded = pickle.load(naive_bayes_saved)
+naive_bayes_loaded = pickle.load(open('/naive_bayes_saved', 'rb'))
 
-random_forest_classifier_loaded = pickle.load(random_forest_classifier_saved)
+random_forest_classifier_loaded = pickle.load(open('/random_forest_classifier_saved', 'rb'))
 
 
 def main():
     st.title("Simple Streamlit Application")
-
-    # Input area
     user_input = st.text_area("Enter your text here:", "")
 
-    # Button to trigger processing
+
     if st.button("Submit"):
-        # Call a function to process the user input (you can replace this with your own logic)
+      
         result1 = svm_classifier_saved(user_input)
         result2 = naive_bayes_saved(user_input)
-        # Display the result
+       
         st.text("Output svm classifier:")
         st.write(result1)
         st.text("Output naive bayes:")
