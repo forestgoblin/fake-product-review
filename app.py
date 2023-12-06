@@ -18,8 +18,6 @@ svm_classifier_loaded = pickle.load(open('/svm_classifier_saved', 'rb'))
 
 naive_bayes_loaded = pickle.load(open('/naive_bayes_saved', 'rb'))
 
-random_forest_classifier_loaded = pickle.load(open('/random_forest_classifier_saved', 'rb'))
-
 
 def main():
     st.title("Simple Streamlit Application")
@@ -28,8 +26,8 @@ def main():
 
     if st.button("Submit"):
       
-        result1 = svm_classifier_saved(user_input)
-        result2 = naive_bayes_saved(user_input)
+        result1 = svm_classifier_loaded(user_input)
+        result2 = naive_bayes_loaded(user_input)
        
         st.text("Output svm classifier:")
         st.write(result1)
