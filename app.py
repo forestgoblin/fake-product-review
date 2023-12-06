@@ -14,7 +14,7 @@ import streamlit as st
 
 import pickle
 
-file_patch1 = 'svm_classifier_saved'
+file_path1 = 'svm_classifier_saved'
 with open(file_path1, 'rb') as file1:
    svm_classifier_loaded = pickle.load(file1) 
 
