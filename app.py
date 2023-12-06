@@ -22,9 +22,25 @@ naive_bayes_loaded = pickle.load('/naive_bayes_saved')
 
 random_forest_classifier_loaded = pickle.load('/random_forest_classifier_saved')
 
-st.title("Fake Review Detector")
-user_review_input = st.text_area()
-st.write(user_review_input)
-answer1 = svm_classifier_saved(user_review_input)
-answer2 = /naive_bayes_saved(user_review_input)
-answer3 = random_forest_classifier_saved(user_review_input)
+
+def main():
+    st.title("Simple Streamlit Application")
+
+    # Input area
+    user_input = st.text_area("Enter your text here:", "")
+
+    # Button to trigger processing
+    if st.button("Submit"):
+        # Call a function to process the user input (you can replace this with your own logic)
+        result = process_input(user_input)
+
+        # Display the result
+        st.text("Output:")
+        st.write(result)
+
+def process_input(user_input):
+    # Replace this with your own processing logic
+    # For now, let's just return the input as it is
+    return svm_classifier_saved(user_input)
+if __name__ == "__main__":
+    main()
