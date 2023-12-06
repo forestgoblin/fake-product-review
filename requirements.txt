@@ -1,4 +1,4 @@
 nltk
-sklearn
+scikit-learn
 pickle
 warnings
